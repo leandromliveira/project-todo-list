@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Minha Lista de Tarefas</h1>
+      <p id="funcionamento">
+        Clique duas vezes em um item para marcá-lo como completo
+      </p>
+      <input
+        id="texto-tarefa"
+        type="text"
+        placeholder="digite a sua tarefa aqui"
+      />
+      <button id="criar-tarefa">Adicionar</button>
+    </header>
+    <main>
+      <img
+        src="images/post-it-note.png"
+        alt="espaço para anotar a lista de tarefas"
+      />
+      <ol id="lista-tarefas"></ol>
+      <div id="buttons">
+        <button id="remover-selecionado">&#9587</button>
+        <button id="mover-cima">&#8593</button>
+        <button id="mover-baixo">&#8595</button>
+        <button id="remover-finalizados">Limpar Completos</button>
+        <button id="apaga-tudo">Limpar Lista</button>
+        <button id="salvar-tarefas">Salvar Lista</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

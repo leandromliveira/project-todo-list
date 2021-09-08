@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  transform: translate(0, -50px);
+  z-index: -1;
+}
+
+ol {
+  display: table;
+  transform: translate(125px, -500px);
+  font-size: 20px;
+  height: 600px;
+  font-family: Permanent Marker;
+  line-height: 40px;
+}
+
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#buttons {
+  position: absolute;
+  transform: translate(100px, -750px);
+}
+
+button {
+  background-color: pink;
+  border-radius: 30%;
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+button:hover {
+  opacity: 1;
+}
